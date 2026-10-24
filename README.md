@@ -19,7 +19,7 @@
 请使用 skill-installer 安装 https://github.com/fiyiya/reading-interview-skill/tree/main/english-coach ，技能名为 english-coach。
 ```
 
-English Coach 从空卡库开始，不包含个人对话、任务卡或学习记录。使用方法见其独立说明。
+English Coach 支持 Codex、TRAE、WorkBuddy 等 Agent 的技能或文档加载方式，并提供完整单文件版。从空卡库开始，不包含个人对话、任务卡或学习记录。[跨产品安装说明](english-coach/README.md) · [下载独立 ZIP](https://github.com/fiyiya/reading-interview-skill/releases/latest/download/english-coach.zip)。
 
 ## 安装 Reading Interview
 
