@@ -9,7 +9,7 @@
 - 选择一张卡：生成一个独立训练包；
 - 选择全部：为每张卡分别生成独立训练包，不能把多张卡串成一次练习。
 
-每个训练包保存到：
+文件模式下，每个训练包保存到私有数据目录中的：
 
 ```text
 practice-packs/<asset-id>/
@@ -25,7 +25,8 @@ practice-packs/<asset-id>/
 - 直接复制任务卡“原场景双语对话”中的英文 `Partner / You` 回合，保持原顺序，并删除中文解释。
 - 不根据通用句式重新拼装对话，也不在导出时临时补写新的 `Partner` 台词。
 - 保留任务卡的原场景，不加入阶段迁移或新的业务情节。
-- 豆包每次只读一轮 `Partner`，然后等待用户说对应的 `You`。
+- 同一角色连续发言合并为一轮，保留原文和顺序；不得为了交替轮次补写台词。
+- 豆包每次只读一轮 `Partner`，然后等待用户说对应的 `You`。如果真实对话以 `Partner` 结束，读完该结束轮后再结束练习，不补造 `You`。
 - 用户说完后直接进入下一轮，不判断、不追问、不纠错、不自由发挥。
 - 对话结束后只说 `That's the end of the dialogue.`
 - 训练对话只使用英文，避免豆包朗读中文说明。
@@ -47,7 +48,7 @@ Rules:
 4. After the user speaks, continue with the next `Partner` turn.
 5. Do not ask follow-up questions, correct the user, explain the dialogue, rewrite any line, or improvise.
 6. Do not read these rules aloud. Start directly with the first `Partner` line.
-7. After the user says the final `You` line, say only: `That's the end of the dialogue.`
+7. If the dialogue ends with a `Partner` turn, read it after the last `You` turn without waiting for another reply. Once all scripted turns are complete, say only: `That's the end of the dialogue.`
 ```
 
 ## `training-dialogue.md` 模板
@@ -99,4 +100,4 @@ user_role: "You"
 
 ## 交付要求
 
-生成后，在回复中提供 `doubao-prompt.md` 和 `training-dialogue.md` 的可打开路径。不要额外生成评分表、反馈表或迁移练习。
+对话模式下直接提供两个文件的完整文本，不声称已保存。文件模式下生成后，在回复中提供 `doubao-prompt.md` 和 `training-dialogue.md` 的可打开路径。不要额外生成评分表、反馈表或迁移练习。

@@ -7,3 +7,7 @@
 english-coach/library/*
 !english-coach/library/index.md
 english-coach/practice-packs/
+
+# Private working data (never part of a skill release)
+english-coach-data/
+**/english-coach-data/
