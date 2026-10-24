@@ -6,7 +6,22 @@
 
 适用于书籍、文章、报告，以及带文字稿的音视频。不用于普通摘要、单纯导出笔记或代写书评。
 
-## 安装
+## 本仓库的 Skills
+
+| Skill | 路径 | 用途 |
+|---|---|---|
+| Reading Interview | 仓库根目录 | 阅读材料梳理与共同研读 |
+| [English Coach](english-coach/README.md) | `english-coach/` | 职场英语任务卡与固定台词语音练习 |
+
+安装 English Coach：
+
+```text
+请使用 skill-installer 安装 https://github.com/fiyiya/reading-interview-skill/tree/main/english-coach ，技能名为 english-coach。
+```
+
+English Coach 从空卡库开始，不包含个人对话、任务卡或学习记录。使用方法见其独立说明。
+
+## 安装 Reading Interview
 
 把本仓库地址发给 Codex，并告诉它：
 
@@ -14,7 +29,7 @@
 请安装这个 Skill：https://github.com/fiyiya/reading-interview-skill
 ```
 
-也可以下载 ZIP，解压后将整个文件夹交给 Codex，并告诉它安装为 `reading-interview`。
+也可以下载 ZIP，解压后将文件夹交给 Codex，并告诉它安装根目录的 `reading-interview`；其中 `english-coach/` 是另一个独立 Skill。
 
 ## 使用
 
