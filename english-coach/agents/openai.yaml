@@ -1,0 +1,5 @@
+interface:
+  display_name: "English Coach"
+  short_description: "Turn real work conversations into reusable English assets"
+  default_prompt: "Use $english-coach to turn this real work conversation into searchable English communication assets."
+
